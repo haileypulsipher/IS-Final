@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hailey Pulsipher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #5ccbdf;
+  color: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(244, 157, 157);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: rgb(89, 20, 110);
+  color: rgb(249, 252, 250);
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hailey Pulsipher</h1>
+  <p>IS 201 Final</p>
+</div>
+
+<div class="navbar" id="top">
+  <a href="#">About Me</a>
+  <a href="Resume.html">Resume</a>
+  <a href="Information.html">Information</a>
+  <a href="Tableau.html">Tableau</a>
+  <a href="Video.html" class="right">Video</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Something I Love</h5>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEC7PN2HfEZNW1nMle6F8edS_izq0v2bg1IA&usqp=CAU" height="200" alt="Gymnast">
+    <p>I was a gymnast for almost 10 years. </p>
+    <h3>Additional Information</h3>
+    <p>My Favorite Colors</p>
+    <img src="https://i.pinimg.com/originals/b7/11/0b/b7110b476d2bae9bd4abc45eb6131778.jpg" height="200" alt="Purple"><br>
+    <img src="data:image/jpeg;base64,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" height="200" alt="Pink"><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4p5m-GKCgusa3o2sgXkwoMAyf6tqBaDiVw&usqp=CAU" height="150" alt="Yellow">
+  </div>
+  <div class="main">
+    <h2>Brigham Young University </h2>
+    <h5>Pre-Business Student</h5>
+    <img src="https://npr.brightspotcdn.com/dims4/default/76d983a/2147483647/strip/true/crop/1256x835+0+0/resize/880x585!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F97%2Fd9%2F30375bf24e21be67e41d24b4e5f4%2Fistock-625943196.jpg" height="200" alt="BYU Sign">
+    <p>Sophomore</p>
+    <p>This is my second year at BYU. I am a pre-business student applying to the Experience Design and Management program in the spring.</p>
+    <br>
+    <h2>Minor</h2>
+    <h5>Art</h5>
+    <img src="https://artfulparent.com/wp-content/uploads/2021/02/best-art-activities-fb.png" height="150" alt="Paint">
+    <p>I love art</p>
+    <p>I have loved art for a long time. I took every possible art class offered at my Junior High School and my High School. I wanted to continue in art without majoring in art, so I decided to pursue an art minor.</p>
+    <ol>
+        <li> Classes I've Loved
+
+            <ul>
+                <li>EXDM 300 <br></li>
+                <li>MKTG 201 <br></li>
+                <li>BIO 100</li>
+            </ul>
+        </li>
+        <li> Classes I Didn't Love
+            <ul>
+                <li>PHIL 202 <br></li>
+                <li>HIST 201 <br></li>
+                <li>PHY S 100</li>
+            </ul>
+        </li>
+        <li> My Most Stressful Classes
+            <ul>
+                <li>ACC 200 <br></li>
+                <li>IS 201 <br></li>
+                <li>PHY S 100</li>
+            </ul> <br>
+            <a href="#top"> Back to top <br></a>
+        </li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>The End :)</h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #24574d;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: rgb(200, 18, 18);
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hailey Pulsipher</h1>
+  <p>IS 201 Final</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">About Me</a>
+  <a href="#">Resume</a>
+  <a href="Information.html">Information</a>
+  <a href="Tableau.html">Tableau</a>
+  <a href="Video.html" class="right">Video</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>My Resume</h2>
+<ol>
+    <li> Education
+        <ul>
+            <li>Farmington High School<br></li>
+            <li>Brigham Young University<br></li>
+        </ul>
+    </li>
+    <li> Work Experience
+        <ul>
+            <li>Urban Air Adventure Park<br></li>
+            <li>Berry Station<br></li>
+            <li>Rocky Mountain Tumbling and Cheer<br></li>
+            <li>Brick Oven<br></li>
+        </ul>
+    </li>
+</ol>
+  </div>
+</div>
